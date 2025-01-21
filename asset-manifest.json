@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-pomodoro-clock/static/css/main.27f98a56.css",
+    "main.js": "/react-pomodoro-clock/static/js/main.c06a9809.js",
+    "static/media/tomato.png": "/react-pomodoro-clock/static/media/tomato.a247e1b175afa2291872.png",
+    "index.html": "/react-pomodoro-clock/index.html",
+    "main.27f98a56.css.map": "/react-pomodoro-clock/static/css/main.27f98a56.css.map",
+    "main.c06a9809.js.map": "/react-pomodoro-clock/static/js/main.c06a9809.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27f98a56.css",
+    "static/js/main.c06a9809.js"
+  ]
+}
