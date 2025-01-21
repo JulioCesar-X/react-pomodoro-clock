@@ -1,0 +1,50 @@
+#session-control {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    margin: 10px;
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .control-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .control-button {
+            background: #ffffff;
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            color: #007bff;
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #007bff;
+                color: #ffffff;
+                transform: scale(1.1);
+            }
+        }
+
+        .control-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+}

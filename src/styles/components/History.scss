@@ -1,0 +1,72 @@
+.history-box {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fundo similar ao restante da aplicação */
+    border-radius: 10px;
+    height: 200px;
+    /* Altura fixa */
+    overflow-y: auto;
+    /* Rolagem vertical apenas para as linhas */
+    padding: 0;
+    /* Removemos padding para evitar interferências */
+
+    .history-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        /* Garante colunas uniformes */
+
+        .history-header {
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            /* Fundo fixo para o cabeçalho */
+            color: #fff;
+            position: sticky;
+            /* Fixa o cabeçalho no topo */
+            top: 0;
+            z-index: 2;
+            /* Certifica que o cabeçalho fica acima das linhas */
+        }
+
+        .history-row {
+            &:nth-child(even) {
+                background: rgba(0, 0, 0, 0.05);
+                /* Fundo alternado para linhas pares */
+            }
+
+            &:hover {
+                background: rgba(0, 123, 255, 0.1);
+                /* Efeito ao passar o mouse */
+            }
+
+            .history-time {
+                font-weight: bold;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+                /* Centraliza o texto na coluna */
+            }
+
+            .history-description {
+                color: #ddd;
+                padding: 10px;
+            }
+        }
+    }
+
+    /* Barra de rolagem customizada */
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #007bff;
+        border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+    }
+}

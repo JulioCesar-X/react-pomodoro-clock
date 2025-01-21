@@ -1,0 +1,78 @@
+.timer-container {
+    margin: 20px 0;
+    text-align: center;
+
+    .timer-label {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    /* Exibição do tempo */
+    .time-visual {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .time-char {
+            display: inline-block;
+            width: 60px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 3rem;
+            font-weight: bold;
+            color: #007bff;
+            line-height: 80px;
+            text-align: center;
+
+            &.separator {
+                background: transparent;
+                border: none;
+                font-size: 2.8rem;
+                color: #333;
+            }
+        }
+    }
+
+    .timer-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+            &.start {
+                background: #28a745;
+                color: #fff;
+
+                &:hover {
+                    background: #218838;
+                    transform: scale(1.05);
+                }
+            }
+
+            &.reset {
+                background: #dc3545;
+                color: #fff;
+
+                &:hover {
+                    background: #b71c1c;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
